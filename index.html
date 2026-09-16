@@ -31,16 +31,20 @@
     <!-- NAV / HEADER -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
             <!-- Logo y Nombre -->
             <div class="flex items-center gap-3">
-                <div class="bg-primary text-white p-2 rounded-lg">
-                    <i data-lucide="home" class="w-6 h-6"></i>
+                <div class="bg-primary text-white p-2.5 rounded-xl shadow-sm">
+                    <i data-lucide="scissors" class="w-6 h-6"></i>
                 </div>
-                <span class="text-xl font-bold tracking-tight text-gray-900">Hogar & Confort</span>
+                <div>
+                    <span class="text-xl font-black tracking-tight text-gray-900 block leading-none">Cortinajes IVANNA</span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest text-accent block mt-1">Decoración & Confort</span>
+                </div>
             </div>
 
             <!-- Menú de Navegación Desktop -->
-            <nav class="hidden md:flex gap-8 font-medium text-gray-600">
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
                 <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
                 <a href="#medicion" class="hover:text-primary transition-colors">Medición a Domicilio</a>
                 <a href="#catalogo" class="hover:text-primary transition-colors">Catálogo</a>
@@ -54,8 +58,10 @@
                     Pedir Cita / Medición
                 </a>
             </div>
+
         </div>
     </header>
+
 
     <!-- HERO SECTION (Portada de Impacto) -->
     <section class="relative bg-gradient-to-b from-blue-50/50 to-transparent py-16 lg:py-24">
@@ -306,7 +312,9 @@
 
                 <!-- Formulario -->
                 <form action="https://formspree.io/f/xbglrppk" method="POST" class="space-y-6">
-                    
+                    <!-- ⚠️ CAMPO HONEYPOT (Anti-Spam oculto para usuarios, visible para bots) -->
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hidden">
+                                       
                     <div class="grid sm:grid-cols-2 gap-6">
                         <!-- Nombre -->
                         <div>
