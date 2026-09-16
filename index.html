@@ -59,9 +59,10 @@
             <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
                 <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
                 <a href="#medicion" class="hover:text-primary transition-colors">Medición a Domicilio</a>
-                <a href="#catalogo" class="hover:text-primary transition-colors">Catálogo</a>
+                <a href="#galeria" class="hover:text-primary transition-colors">Nuestros Trabajos</a>
                 <a href="#contacto" class="hover:text-primary transition-colors">Contacto</a>
             </nav>
+
 
             <!-- Botón de Llamada a la Acción (CTA) -->
             <div class="hidden md:block">
@@ -310,6 +311,95 @@
             </div>
         </div>
     </section>
+    <!-- SECCIÓN GALERÍA DE TRABAJOS REALIZADOS -->
+    <section id="galeria" class="py-20 bg-gray-50 border-t border-gray-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Cabecera de la sección -->
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-accent mb-2">Proyectos Reales</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Trabajos realizados para nuestros clientes
+                </h3>
+                <p class="mt-4 text-gray-600">
+                    Una muestra de nuestras instalaciones de cortinas, estores, ventiladores de techo y amueblamiento.
+                </p>
+            </div>
+
+            <!-- Botones de Filtro por Categoría -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12">
+                <button onclick="filtrarGaleria('todos')" class="btn-filtro active bg-primary text-white font-medium px-5 py-2.5 rounded-xl shadow-sm transition-all text-sm">
+                    Todos los trabajos
+                </button>
+                <button onclick="filtrarGaleria('cortinas')" class="btn-filtro bg-white hover:bg-gray-100 text-gray-700 font-medium px-5 py-2.5 rounded-xl border border-gray-200 transition-all text-sm">
+                    Cortinas a Medida
+                </button>
+                <button onclick="filtrarGaleria('estores')" class="btn-filtro bg-white hover:bg-gray-100 text-gray-700 font-medium px-5 py-2.5 rounded-xl border border-gray-200 transition-all text-sm">
+                    Estores y Paquetis
+                </button>
+                <button onclick="filtrarGaleria('ventiladores')" class="btn-filtro bg-white hover:bg-gray-100 text-gray-700 font-medium px-5 py-2.5 rounded-xl border border-gray-200 transition-all text-sm">
+                    Ventiladores de Techo
+                </button>
+                <button onclick="filtrarGaleria('muebles')" class="btn-filtro bg-white hover:bg-gray-100 text-gray-700 font-medium px-5 py-2.5 rounded-xl border border-gray-200 transition-all text-sm">
+                    Muebles y Descanso
+                </button>
+            </div>
+
+            <!-- Cuadrícula de Fotos (Grid) -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Foto 1: Cortinas -->
+                <div class="item-galeria cortinas group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Cortinas de salón a medida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-primary/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Cortinas</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900 text-lg">Instalación de Cortinas de Lino</h4>
+                        <p class="text-sm text-gray-500 mt-1">Confección a medida con caída elegante para salón.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 2: Estores -->
+                <div class="item-galeria estores group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Estor enrollable noche y día" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-accent/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Estores</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900 text-lg">Estor Enrollable Screen</h4>
+                        <p class="text-sm text-gray-500 mt-1">Protección solar y privacidad en dormitorio principal.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 3: Ventiladores -->
+                <div class="item-galeria ventiladores group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Ventilador de techo con luz" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-primary/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Ventiladores</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900 text-lg">Ventilador Silencioso Motor DC</h4>
+                        <p class="text-sm text-gray-500 mt-1">Montaje e instalación eléctrica en techo de salón.</p>
+                    </div>
+                </div>
+
+                <!-- Foto 4: Muebles -->
+                <div class="item-galeria muebles group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Mobiliario de salón amueblado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-accent/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Muebles</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-bold text-gray-900 text-lg">Conjunto de Muebles de Salón</h4>
+                        <p class="text-sm text-gray-500 mt-1">Transporte, montaje y distribución integral en vivienda.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- SECCIÓN FORMULARIO DE PRESUPUESTO / CITA -->
     <section id="presupuesto" class="py-20 bg-white">
@@ -476,9 +566,35 @@
             </div>
         </div>
     </footer>
-
     <script>
-        lucide.createIcons();
-    </script>
+    // Inicializa los iconos de Lucide
+    lucide.createIcons();
+
+    // Función para filtrar los elementos de la galería
+    function filtrarGaleria(categoria) {
+        const items = document.querySelectorAll('.item-galeria');
+        const botones = document.querySelectorAll('.btn-filtro');
+
+        // Cambiar estilos visuales de los botones al hacer clic
+        botones.forEach(btn => {
+            btn.classList.remove('bg-primary', 'text-white');
+            btn.classList.add('bg-white', 'text-gray-700');
+        });
+        
+        if (event && event.target) {
+            event.target.classList.remove('bg-white', 'text-gray-700');
+            event.target.classList.add('bg-primary', 'text-white');
+        }
+
+        // Mostrar u ocultar imágenes según la categoría seleccionada
+        items.forEach(item => {
+            if (categoria === 'todos' || item.classList.contains(categoria)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+
 </body>
 </html>
