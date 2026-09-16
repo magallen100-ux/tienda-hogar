@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoración & Confort | Cortinas, Muebles y Climatización</title>
+    
+    <!-- Tailwind CSS (Vía CDN para desarrollo rápido sin instalaciones pesadas) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Iconos Lucide (Iconos modernos y limpios) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', // Azul elegante para dar confianza
+                        accent: '#d97706',  <!-- Cálido/Madera para hogar -->
+                        neutralBg: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutralBg text-gray-800 font-sans antialiased">
+
+    <!-- NAV / HEADER -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo y Nombre -->
+            <div class="flex items-center gap-3">
+                <div class="bg-primary text-white p-2 rounded-lg">
+                    <i data-lucide="home" class="w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-gray-900">Hogar & Confort</span>
+            </div>
+
+            <!-- Menú de Navegación Desktop -->
+            <nav class="hidden md:flex gap-8 font-medium text-gray-600">
+                <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
+                <a href="#medicion" class="hover:text-primary transition-colors">Medición a Domicilio</a>
+                <a href="#catalogo" class="hover:text-primary transition-colors">Catálogo</a>
+                <a href="#contacto" class="hover:text-primary transition-colors">Contacto</a>
+            </nav>
+
+            <!-- Botón de Llamada a la Acción (CTA) -->
+            <div class="hidden md:block">
+                <a href="#presupuesto" class="bg-primary hover:bg-blue-900 text-white font-medium px-5 py-2.5 rounded-xl shadow-sm transition-all flex items-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i>
+                    Pedir Cita / Medición
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Portada de Impacto) -->
+    <section class="relative bg-gradient-to-b from-blue-50/50 to-transparent py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Texto del Hero -->
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                    Especialistas en decoración a medida
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+                    Transformamos tu hogar con <span class="text-primary">estilo y confort</span>
+                </h1>
+                
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Cortinas y estores confeccionados a medida, instalación profesional de ventiladores y mobiliario de calidad. Nos desplazamos a tu domicilio para medir y mostrarte nuestro catálogo sin compromiso.
+                </p>
+
+                <!-- Botones del Hero -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                    <a href="#presupuesto" class="bg-primary hover:bg-blue-900 text-white font-semibold px-6 py-3.5 rounded-xl shadow-md transition-all text-center flex items-center justify-center gap-2">
+                        <i data-lucide="ruler" class="w-5 h-5"></i>
+                        Solicitar medición en casa
+                    </a>
+                    <a href="#servicios" class="bg-white hover:bg-gray-50 text-gray-700 font-semibold px-6 py-3.5 rounded-xl border border-gray-200 transition-all text-center flex items-center justify-center gap-2">
+                        Ver catálogo de servicios
+                    </a>
+                </div>
+
+                <!-- Garantías / Badges rápidos -->
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200/80 text-sm text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i>
+                        <span>Medición gratuita</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="truck" class="w-4 h-4 text-emerald-600"></i>
+                        <span>Entrega a domicilio</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="wrench" class="w-4 h-4 text-emerald-600"></i>
+                        <span>Instalación propia</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen destacada del Hero (Unsplash con licencia libre) -->
+            <div class="relative">
+                <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img 
+                        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1000&q=80" 
+                        alt="Salón moderno equipado con cortinas y muebles de diseño" 
+                        class="w-full h-full object-cover"
+                    >
+                </div>
+                <!-- Tarjeta flotante decorativa -->
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl hidden sm:flex items-center gap-4 border border-gray-100">
+                    <div class="bg-amber-100 p-3 rounded-xl text-amber-700">
+                        <i data-lucide="star" class="w-6 h-6 fill-amber-500 text-amber-500"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-gray-900 text-sm">Atención Personalizada</p>
+                        <p class="text-xs text-gray-500">Llevamos las muestras a tu salón</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Encabezado de la sección -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-accent mb-2">Nuestros Servicios</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                    Soluciones integrales para vestir y equipar tu hogar
+                </p>
+                <p class="mt-4 text-gray-600 text-lg">
+                    Nos encargamos de todo el proceso: desde el asesoramiento inicial en tu casa hasta la instalación final.
+                </p>
+            </div>
+
+            <!-- Grid de 4 Servicios -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Tarjeta 1: Cortinas a medida -->
+                <div class="bg-neutralBg rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="scissors" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cortinas a Medida</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Confección personalizada. Nos desplazamos a tu domicilio con el muestrario para tomar medidas exactas.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200/60 flex items-center gap-2 text-xs font-semibold text-primary">
+                        <i data-lucide="ruler" class="w-4 h-4"></i>
+                        <span>Medición a domicilio</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Estores -->
+                <div class="bg-neutralBg rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 text-accent rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Estores y Paquetis</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Estores enrollables, noche y día, o de tejido técnico. Control de luz perfecto para cualquier estancia.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200/60 flex items-center gap-2 text-xs font-semibold text-accent">
+                        <i data-lucide="palette" class="w-4 h-4"></i>
+                        <span>Catálogo de telas en casa</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Ventiladores de Techo -->
+                <div class="bg-neutralBg rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-100 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="fan" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Ventiladores de Techo</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Venta e instalación profesional. Modelos silenciosos, con luz LED y motor DC de bajo consumo.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200/60 flex items-center gap-2 text-xs font-semibold text-primary">
+                        <i data-lucide="wrench" class="w-4 h-4"></i>
+                        <span>Instalación incluida</span>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Muebles y Colchones -->
+                <div class="bg-neutralBg rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="w-12 h-12 bg-amber-100 text-accent rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <i data-lucide="armchair" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Muebles y Descanso</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Muebles para salón y dormitorio, además de sistemas de descanso (colchones y canapés) con transporte.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-200/60 flex items-center gap-2 text-xs font-semibold text-accent">
+                        <i data-lucide="truck" class="w-4 h-4"></i>
+                        <span>Reparto e instalación</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CÓMO TRABAJAMOS / MEDICIÓN -->
+    <section id="medicion" class="py-20 bg-blue-50/60 border-y border-blue-100/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Columna Izquierda: Imagen descriptiva -->
+                <div class="relative order-2 lg:order-1">
+                    <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                        <img 
+                            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80" 
+                            alt="Medición de cortinas y asesoramiento en hogar" 
+                            class="w-full h-full object-cover"
+                        >
+                    </div>
+                    <!-- Badge superpuesto -->
+                    <div class="absolute -top-4 -right-4 bg-primary text-white p-4 rounded-2xl shadow-lg hidden sm:block">
+                        <p class="text-2xl font-black">0 €</p>
+                        <p class="text-xs text-blue-200">Sin coste de desplazamiento*</p>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Explicación del proceso -->
+                <div class="space-y-8 order-1 lg:order-2">
+                    <div>
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Servicio a Domicilio</h2>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight">
+                            Medimos y elegimos las telas en la comodidad de tu casa
+                        </h3>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                            Olvídate de cometer errores con las medidas. Llevamos el muestrario completo a tu vivienda para que veas cómo combinan los colores y tejidos con la luz real de tus estancias.
+                        </p>
+                    </div>
+
+                    <!-- Pasos 1-2-3 -->
+                    <div class="space-y-6">
+                        <!-- Paso 1 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm shadow-md">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Solicita tu cita</h4>
+                                <p class="text-gray-600 text-sm">Déjanos tus datos o llámanos. Acordamos un día y hora que te venga bien.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 2 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm shadow-md">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Visita y asesoramiento</h4>
+                                <p class="text-gray-600 text-sm">Tomamos medidas milimétricas y elegimos telas, mecanismos o modelos de ventiladores.</p>
+                            </div>
+                        </div>
+
+                        <!-- Paso 3 -->
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-white font-bold flex items-center justify-center text-sm shadow-md">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900 text-lg">Presupuesto sin compromiso e instalación</h4>
+                                <p class="text-gray-600 text-sm">Te entregamos la valoración final y, tras la confección, nos encargamos de todo el montaje.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Script para renderizar los iconos de Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
