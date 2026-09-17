@@ -596,25 +596,42 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- Columna 4: Contacto -->
+                <!-- Columna de Contacto y Ubicación -->
                 <div>
-                    <h4 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Contacto</h4>
-                    <ul class="space-y-3 text-sm text-gray-400">
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-accent"></i>
-                            <span>Calle Principal, 123, Tu Ciudad</span>
+                    <h4 class="text-white font-bold text-lg mb-4">Contacto y Ubicación</h4>
+                    <ul class="space-y-3 text-sm">
+                        
+                        <!-- Teléfono con llamada directa -->
+                        <li>
+                            <a href="tel:+34615474002" class="flex items-center gap-3 hover:text-emerald-400 transition-colors">
+                                <i data-lucide="phone" class="w-5 h-5 text-emerald-500 shrink-0"></i>
+                                <span class="font-medium">+34 615 47 40 02</span>
+                            </a>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-accent"></i>
-                            <span>+34 600 000 000</span>
+
+                        <!-- Botón flotante / directo de WhatsApp -->
+                        <li>
+                            <a href="https://wa.me/34615474002?text=Hola,%20quisiera%20pedir%20información%20o%20presupuesto" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-emerald-400 transition-colors">
+                                <i data-lucide="message-circle" class="w-5 h-5 text-emerald-500 shrink-0"></i>
+                                <span>Enviar WhatsApp</span>
+                            </a>
                         </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-accent"></i>
-                            <span>contacto@tuweb.com</span>
+
+                        <!-- Dirección con enlace interactivo a Google Maps -->
+                        <li class="pt-2">
+                            <a href="https://maps.app.goo.gl/vfQkYyyMvG8wYUFB7" target="_blank" rel="noopener noreferrer" class="group flex items-start gap-3 hover:text-emerald-400 transition-colors">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                                <div>
+                                    <span class="font-medium block text-white group-hover:text-emerald-400">Ver ubicación en Google Maps</span>
+                                    <span class="text-xs text-gray-400 block mt-0.5">Haz clic para abrir la ruta en el mapa</span>
+                                </div>
+                                <i data-lucide="external-link" class="w-4 h-4 text-gray-500 group-hover:text-emerald-400 shrink-0 ml-auto mt-0.5"></i>
+                            </a>
                         </li>
+
                     </ul>
-                </div>
+                </div>                   
+
 
             </div>
 
