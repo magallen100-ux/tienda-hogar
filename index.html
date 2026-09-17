@@ -569,14 +569,29 @@
     </section>
     <!-- Script para renderizar los iconos de Lucide -->
     
-    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
-    <a href="https://wa.me/34600000000?text=Hola,%20me%20gustaría%20pedir%20información%20o%20cita%20para%20una%20medición" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition-all hover:scale-110 z-50 flex items-center justify-center group" title="Contactar por WhatsApp">
-        <i data-lucide="message-circle" class="w-7 h-7"></i>
-        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-sm font-bold pl-0 group-hover:pl-2">
-            ¿Hablamos por WhatsApp?
-        </span>
-    </a>
+    <!-- WIDGET FLOTANTE DE WHATSAPP -->
+    <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+        <!-- Mensaje / Globo flotante explicativo -->
+        <a href="https://wa.me/34615474002?text=Hola,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20o%20pedir%20presupuesto" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="hidden sm:flex bg-white text-gray-800 font-semibold px-4 py-2.5 rounded-2xl shadow-xl border border-gray-100 hover:bg-gray-50 transition-all items-center gap-2 text-sm group">
+            <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
+            <span>¿Hablamos por WhatsApp?</span>
+        </a>
 
+        <!-- Botón circular verde con el icono -->
+        <a href="https://wa.me/34615474002?text=Hola,%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20o%20pedir%20presupuesto" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        aria-label="Contactar por WhatsApp" 
+        class="bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+    </div>
+
+
+    
     <!-- FOOTER / PIE DE PÁGINA -->
 
     <footer id="contacto" class="bg-gray-900 text-gray-300 pt-16 pb-12 border-t border-gray-800">
