@@ -41,35 +41,59 @@
 <body class="bg-neutralBg text-gray-800 font-sans antialiased">
 
     <!-- NAV / HEADER -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             
-            <!-- Logo y Nombre -->
-            <div class="flex items-center gap-3">
-                <div class="bg-primary text-white p-2.5 rounded-xl shadow-sm">
-                    <i data-lucide="scissors" class="w-6 h-6"></i>
+            <!-- Fila Principal (Logo, Accesos Directos y Menú) -->
+            <div class="flex items-center justify-between gap-4">
+                
+                <!-- Logo, Nombre y Datos de Contacto Directo -->
+                <div class="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                    
+                    <!-- Marca -->
+                    <div class="flex items-center gap-3">
+                        <div class="bg-slate-900 text-white p-2.5 rounded-xl shadow-sm flex items-center justify-center shrink-0">
+                            <i data-lucide="layers" class="w-6 h-6 text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <span class="text-xl font-black tracking-tight text-gray-900 block leading-none">CORTITECNIC</span>
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-600 block mt-1">Protección Solar & Confort</span>
+                        </div>
+                    </div>
+
+                    <!-- Datos Rápidos para gente mayor (Móvil y Escritorio) -->
+                    <div class="flex items-center gap-3 pt-1 sm:pt-0 sm:border-l sm:border-gray-200 sm:pl-6 text-sm">
+                        <!-- Teléfono directo -->
+                        <a href="tel:+34615474002" class="flex items-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold px-3 py-1.5 rounded-lg border border-emerald-200 transition-colors text-xs sm:text-sm">
+                            <i data-lucide="phone" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                            <span>615 47 40 02</span>
+                        </a>
+
+                        <!-- Ubicación Google Maps -->
+                        <a href="https://maps.app.goo.gl/vfQkYyyMvG8wYUFB7" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium px-3 py-1.5 rounded-lg transition-colors text-xs sm:text-sm">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                            <span>Ver Tienda</span>
+                        </a>
+                    </div>
+
                 </div>
-                <div>
-                    <span class="text-xl font-black tracking-tight text-gray-900 block leading-none">Cortinajes IVANNA</span>
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-accent block mt-1">Decoración & Confort</span>
+
+                <!-- Menú de Navegación Desktop -->
+                <nav class="hidden lg:flex items-center gap-6 font-medium text-gray-600 text-sm">
+                    <a href="#servicios" class="hover:text-emerald-600 transition-colors">Servicios</a>
+                    <a href="#medicion" class="hover:text-emerald-600 transition-colors">Medición a Domicilio</a>
+                    <a href="#galeria" class="hover:text-emerald-600 transition-colors">Nuestros Trabajos</a>
+                    <a href="#contacto" class="hover:text-emerald-600 transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Botón de Llamada a la Acción (CTA Desktop) -->
+                <div class="hidden sm:block">
+                    <a href="#presupuesto" class="bg-slate-900 hover:bg-emerald-700 text-white font-medium px-4 py-2 rounded-xl shadow-sm transition-all flex items-center gap-2 text-sm">
+                        <i data-lucide="calendar" class="w-4 h-4 text-emerald-400"></i>
+                        Pedir Cita
+                    </a>
                 </div>
-            </div>
 
-            <!-- Menú de Navegación Desktop -->
-            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600">
-                <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
-                <a href="#medicion" class="hover:text-primary transition-colors">Medición a Domicilio</a>
-                <a href="#galeria" class="hover:text-primary transition-colors">Nuestros Trabajos</a>
-                <a href="#contacto" class="hover:text-primary transition-colors">Contacto</a>
-            </nav>
-
-
-            <!-- Botón de Llamada a la Acción (CTA) -->
-            <div class="hidden md:block">
-                <a href="#presupuesto" class="bg-primary hover:bg-blue-900 text-white font-medium px-5 py-2.5 rounded-xl shadow-sm transition-all flex items-center gap-2">
-                    <i data-lucide="calendar" class="w-4 h-4"></i>
-                    Pedir Cita / Medición
-                </a>
             </div>
 
         </div>
