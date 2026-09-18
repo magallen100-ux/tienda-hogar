@@ -354,9 +354,15 @@
                 <!-- 1. Estores Screen -->
                 <div class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
                     <div class="relative aspect-[4/3] overflow-hidden carrusel-container" data-carrusel="estores-screen">
-                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Estores Screen 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Estores Screen 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        
+                        <!-- La primera imagen visible (opacity-100) -->
+                        <img src="img/stor1.jpeg" alt="Estor Screen 1" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
+
+                        <!-- Las siguientes imágenes ocultas (opacity-0) -->
+                        <img src="img/stor2.jpeg" alt="Estor Screen 2" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+                        <img src="img/stor3.jpeg" alt="Estor Screen 3" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+                        <img src="img/stor4.jpeg" alt="Estor Screen 4" class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+                                               
+                                                
                         <span class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Estores Screen</span>
                         
                         <button onclick="cambiarSlide('estores-screen', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
