@@ -14,8 +14,8 @@ collections:
     label_singular: "Categoría"
     folder: "content/galeria"
     create: true
-    identifier_field: "titulo"
-    slug: "{{slug}}"
+    summary: "{{titulo}}"
+    slug: "{{titulo}}"
     format: "json"
     fields:
       - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Verticales Noche y Dia" }
