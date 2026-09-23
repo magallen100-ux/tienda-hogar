@@ -1,0 +1,19 @@
+{
+  "orden": 1,
+  "titulo": "Estores Screen",
+  "descripcion": "Control térmico y protección solar sin perder vistas al exterior.",
+  "imagenes": [
+    {
+      "foto": "img/stor1.jpeg"
+    },
+    {
+      "foto": "img/stor2.jpeg"
+    },
+    {
+      "foto": "img/stor3.jpeg"
+    },
+    {
+      "foto": "img/stor4.jpeg"
+    }
+  ]
+}
