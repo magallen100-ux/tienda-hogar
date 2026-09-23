@@ -1,28 +1,29 @@
 backend:
   name: github
-  repo: magallen100-ux/tienda-hogar # Cambia por tu usuario/repo real de GitHub (ej: tu-nombre/cortinajes-ivanna)
+  repo: magallen100-ux/tienda-hogar # Cambia por tu usuario/repo real de GitHub
   branch: main
-  base_url: https://cortinajesivanna.com # O tu dominio principal
+  base_url: https://cortinajesivanna.com
   auth_endpoint: /api/auth
 
 media_folder: "img"
 public_folder: "img"
 
 collections:
-  - name: "galeria"
-    label: "Galería de Trabajos"
-    files:
-      - file: "content/galeria.json"
-        label: "Fotos de la Galería"
-        name: "galeria_data"
+  - name: "categorias_galeria"
+    label: "Categorías de la Galería"
+    label_singular: "Categoría"
+    folder: "content/galeria" # Creará un archivo por cada categoría (ej: salon.json, estores.json)
+    create: true # 👈 Permite a tu amigo CREAR NUEVAS secciones desde el botón "+ Nueva Categoría"
+    slug: "{{slug}}"
+    format: "json"
+    fields:
+      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Cortinas de Salón" }
+      - { label: "Descripción Corta", name: "descripcion", widget: "text", required: false, hint: "Breve explicación que aparecerá sobre las fotos" }
+      - { label: "Orden de aparición", name: "orden", widget: "number", default: 1, value_type: "int" }
+      - label: "Fotos de esta categoría"
+        name: "imagenes"
+        widget: "list"
+        summary: '{{fields.foto}}'
         fields:
-          - label: "Categorías de la Galería"
-            name: "items"
-            widget: "list"
-            fields:
-              - { label: "Título de la Categoría", name: "titulo", widget: "string" }
-              - { label: "Descripción Corta", name: "descripcion", widget: "string" }
-              - label: "Imágenes de esta categoría"
-                name: "imagenes"
-                widget: "list"
-                field: { label: "Imagen", name: "foto", widget: "image" }
+          - { label: "Imagen", name: "foto", widget: "image" }
+          - { label: "Título / Pie de foto", name: "titulo_foto", widget: "string", required: false }
