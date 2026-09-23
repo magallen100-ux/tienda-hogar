@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: magallen100-ux/tienda-hogar # Cambia por tu repo real (ej: magallen100-ux/tienda-hogar)
+  repo: magallen100-ux/tienda-hogar
   branch: main
   base_url: https://cortinajesivanna.com
   auth_endpoint: /api/auth
@@ -14,10 +14,11 @@ collections:
     label_singular: "Categoría"
     folder: "content/galeria"
     create: true
-    slug: "{{fields.titulo}}" # 👈 Forzamos a usar el título (ej: "Estores Screen" -> "estores-screen.json")
+    identifier_field: "titulo" # 👈 Esto asegura que tome siempre el nombre de la categoría
+    slug: "{{fields.titulo}}"  # 👈 Convierte "Verticales Screen" a "verticales-screen"
     format: "json"
     fields:
-      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Estores Screen" }
+      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Verticales Screen" }
       - { label: "Descripción Corta", name: "descripcion", widget: "text", required: false }
       - { label: "Orden de aparición", name: "orden", widget: "number", default: 1, value_type: "int" }
       - label: "Fotos de esta categoría"

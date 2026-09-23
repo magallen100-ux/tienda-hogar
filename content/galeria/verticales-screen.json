@@ -1,0 +1,11 @@
+{
+  "titulo": "Verticales Screen",
+  "descripcion": "Elegantes lamas orientables ideales para grandes ventanales.",
+  "orden": 2,
+  "imagenes": [
+    { "foto": "img/verticalscreen1.jpeg" },
+    { "foto": "img/verticalscreen2.jpeg" },
+    { "foto": "img/verticalscreen3.jpeg" },
+    { "foto": "img/verticalscreen4.jpeg" }
+  ]
+}
