@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: magallen100-ux/tienda-hogar # ej: tu-usuario/cortinajes-ivanna
+  branch: main                    # o 'master'
+  site_domain: decap-cms-oauth-provider.vercel.app
+  base_url: https://decap-cms-oauth-provider.vercel.app
+
+media_folder: "img"
+public_folder: "img"
+
+collections:
+  - name: "galeria"
+    label: "Galería de Trabajos"
+    files:
+      - file: "content/galeria.json"
+        label: "Fotos de la Galería"
+        name: "galeria_data"
+        fields:
+          - label: "Categorías de la Galería"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Título de la Categoría", name: "titulo", widget: "string" }
+              - { label: "Descripción Corta", name: "descripcion", widget: "string" }
+              - label: "Imágenes de esta categoría"
+                name: "imagenes"
+                widget: "list"
+                field: { label: "Imagen", name: "foto", widget: "image" }
