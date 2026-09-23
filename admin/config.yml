@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: magallen100-ux/tienda-hogar # ej: tu-usuario/cortinajes-ivanna
-  branch: main                    # o 'master'
-  site_domain: decap-cms-oauth-provider.vercel.app
-  base_url: https://decap-cms-oauth-provider.vercel.app
+  repo: magallen100-ux/tienda-hogar # Cambia por tu usuario/repo real de GitHub (ej: tu-nombre/cortinajes-ivanna)
+  branch: main
+  base_url: https://cortinajesivanna.com # O tu dominio principal
+  auth_endpoint: /api/auth
 
 media_folder: "img"
 public_folder: "img"
