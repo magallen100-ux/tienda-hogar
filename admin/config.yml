@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: magallen100-ux/tienda-hogar # Cambia por tu usuario/repo real de GitHub
+  repo: magallen100-ux/tienda-hogar # Cambia por tu repo real (ej: magallen100-ux/tienda-hogar)
   branch: main
   base_url: https://cortinajesivanna.com
   auth_endpoint: /api/auth
@@ -12,13 +12,13 @@ collections:
   - name: "categorias_galeria"
     label: "Categorías de la Galería"
     label_singular: "Categoría"
-    folder: "content/galeria" # Creará un archivo por cada categoría (ej: salon.json, estores.json)
-    create: true # 👈 Permite a tu amigo CREAR NUEVAS secciones desde el botón "+ Nueva Categoría"
-    slug: "{{slug}}"
+    folder: "content/galeria"
+    create: true
+    slug: "{{fields.titulo}}" # 👈 Forzamos a usar el título (ej: "Estores Screen" -> "estores-screen.json")
     format: "json"
     fields:
-      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Cortinas de Salón" }
-      - { label: "Descripción Corta", name: "descripcion", widget: "text", required: false, hint: "Breve explicación que aparecerá sobre las fotos" }
+      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Estores Screen" }
+      - { label: "Descripción Corta", name: "descripcion", widget: "text", required: false }
       - { label: "Orden de aparición", name: "orden", widget: "number", default: 1, value_type: "int" }
       - label: "Fotos de esta categoría"
         name: "imagenes"
