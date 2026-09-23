@@ -385,218 +385,15 @@
                 </p>
             </div>
 
-            <!-- Cuadrícula de 6 Tarjetas con Carrusel -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <!-- 1. Estores Screen -->
-                <div
-                    class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
-                    <div class="relative aspect-[4/3] overflow-hidden carrusel-container"
-                        data-carrusel="estores-screen">
-                        <!-- La primera imagen visible (opacity-100) -->
-                        <img src="img/stor1.jpeg" alt="Estor Screen 1"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-
-                        <!-- Las siguientes imágenes ocultas (opacity-0) -->
-                        <img src="img/stor2.jpeg" alt="Estor Screen 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/stor3.jpeg" alt="Estor Screen 3"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/stor4.jpeg" alt="Estor Screen 4"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-
-
-                        <span
-                            class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Estores
-                            Screen</span>
-
-                        <button onclick="cambiarSlide('estores-screen', -1)"
-                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button onclick="cambiarSlide('estores-screen', 1)"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-bold text-gray-900 text-lg">Estores Screen</h4>
-                        <p class="text-sm text-gray-500 mt-1">Control térmico y protección solar sin perder vistas al
-                            exterior.</p>
-                    </div>
-                </div>
-
-                <!-- 2. Verticales Screen -->
-                <div
-                    class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
-                    <div class="relative aspect-[4/3] overflow-hidden carrusel-container"
-                        data-carrusel="verticales-screen">
-                        <img src="img/verticalscreen1.jpeg" alt="Verticales Screen 1"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-                        <img src="img/verticalscreen2.jpeg" alt="Verticales Screen 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/verticalscreen3.jpeg" alt="Verticales Screen 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/verticalscreen4.jpeg" alt="Verticales Screen 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-
-                        <span
-                            class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Verticales
-                            Screen</span>
-
-                        <button onclick="cambiarSlide('verticales-screen', -1)"
-                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button onclick="cambiarSlide('verticales-screen', 1)"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-bold text-gray-900 text-lg">Verticales Screen</h4>
-                        <p class="text-sm text-gray-500 mt-1">Elegantes lamas orientables ideales para grandes
-                            ventanales.</p>
-                    </div>
-                </div>
-
-                <!-- 3. Verticales Noche/Día -->
-                <div
-                    class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
-                    <div class="relative aspect-[4/3] overflow-hidden carrusel-container"
-                        data-carrusel="verticales-noche-dia">
-
-                        <img src="img/cortinand1.jpeg" alt="Verticales Noche y Día 1"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-                        <img src="img/cortinand2.jpeg" alt="Verticales Noche y Día 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/cortinand3.jpeg" alt="Verticales Noche y Día 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/cortinand4.jpeg" alt="Verticales Noche y Día 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/cortinand5.jpeg" alt="Verticales Noche y Día 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-
-                        <span
-                            class="absolute top-4 left-4 bg-emerald-600/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Verticales
-                            Noche/Día</span>
-
-                        <button onclick="cambiarSlide('verticales-noche-dia', -1)"
-                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button onclick="cambiarSlide('verticales-noche-dia', 1)"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-bold text-gray-900 text-lg">Verticales Noche/Día</h4>
-                        <p class="text-sm text-gray-500 mt-1">Combinación de franjas opacas y traslúcidas para graduar
-                            la luz.</p>
-                    </div>
-                </div>
-
-                <!-- 4. Cortinas Onda Perfecta -->
-                <div
-                    class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
-                    <div class="relative aspect-[4/3] overflow-hidden carrusel-container" data-carrusel="onda-perfecta">
-                        <img src="img/cortinaondaperfecta1.jpeg" alt="Cortina Onda Perfecta 1"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-                        <img src="img/cortinaondaperfecta2.jpeg" alt="Cortina Onda Perfecta 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/cortinaondaperfecta3.jpeg" alt="Cortina Onda Perfecta 3"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/cortinaondaperfecta4.jpeg" alt="Cortina Onda Perfecta 4"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-
-
-                        <span
-                            class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Onda
-                            Perfecta</span>
-
-                        <button onclick="cambiarSlide('onda-perfecta', -1)"
-                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button onclick="cambiarSlide('onda-perfecta', 1)"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-bold text-gray-900 text-lg">Cortinas Onda Perfecta</h4>
-                        <p class="text-sm text-gray-500 mt-1">Confección simétrica y fluida de acabado impecable.</p>
-                    </div>
-                </div>
-
-                <!-- 5. Colchones -->
-                <div
-                    class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
-                    <div class="relative aspect-[4/3] overflow-hidden carrusel-container" data-carrusel="colchones">
-                        <img src="img/colchon1.jpeg" alt="Sistemas de descanso 1"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-                        <img src="img/colchon2.jpeg" alt="Sistemas de descanso 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/colchon3.jpeg" alt="Sistemas de descanso 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/colchon4.jpeg" alt="Sistemas de descanso 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-
-
-                        <span
-                            class="absolute top-4 left-4 bg-emerald-600/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Sistemas
-                            de Descanso</span>
-
-                        <button onclick="cambiarSlide('colchones', -1)"
-                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button onclick="cambiarSlide('colchones', 1)"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-bold text-gray-900 text-lg">Colchones y Descanso</h4>
-                        <p class="text-sm text-gray-500 mt-1">Equipos de descanso, canapés y tecnología viscoelástica.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 6. Muebles -->
-                <div
-                    class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
-                    <div class="relative aspect-[4/3] overflow-hidden carrusel-container" data-carrusel="muebles">
-                        <img src="img/mueble1.jpg" alt="Mobiliario 1"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-100">
-                        <img src="img/mueble2.jpg" alt="Mobiliario 2"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/mueble3.jpg" alt="Mobiliario 3"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/mueble4.jpg" alt="Mobiliario 4"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <img src="img/mueble5.jpg" alt="Mobiliario 5"
-                            class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
-                        <span
-                            class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">Muebles</span>
-
-                        <button onclick="cambiarSlide('muebles', -1)"
-                            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <button onclick="cambiarSlide('muebles', 1)"
-                            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="font-bold text-gray-900 text-lg">Mobiliario de Hogar</h4>
-                        <p class="text-sm text-gray-500 mt-1">Muebles de salón, comedor y proyectos de amueblamiento.
-                        </p>
-                    </div>
-                </div>
+                       
+            <!-- Cuadrícula Dinámica de Categorías (se rellena desde Decap CMS) -->
+            <div id="galeria-container" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- El contenido se cargará dinámicamente con JavaScript -->
             </div>
+            
+            
+            
+            
         </div>
     </section>
 
@@ -839,21 +636,92 @@
         </div>
     </footer>
 
+
     <script>
         // Inicializar iconos de Lucide
         lucide.createIcons();
 
-        // Estado actual de las 6 categorías
-        const carruselesEstado = {
-            'estores-screen': 0,
-            'verticales-screen': 0,
-            'verticales-noche-dia': 0,
-            'onda-perfecta': 0,
-            'colchones': 0,
-            'muebles': 0
-        };
+        // Estado global de índices para los carruseles dinámicos
+        const carruselesEstado = {};
 
-        // Función para cambiar de foto manualmente (Flechas)
+        // Función para cargar dinámicamente todas las categorías del CMS
+        async function cargarGaleriaDesdeCMS() {
+            const contenedor = document.getElementById('galeria-container');
+            if (!contenedor) return;
+
+            // Lista de archivos JSON que tengas creados en content/galeria/
+            // Puedes agregar aquí los slugs de las categorías a medida que las crees en el CMS
+            const categoriasSlugs = [
+                'cortinas-salon',
+                'estores-screen',
+                'verticales-screen',
+                'verticales-noche-dia',
+                'onda-perfecta',
+                'colchones',
+                'muebles'
+            ];
+
+            let htmlFinal = '';
+
+            for (const slug of categoriasSlugs) {
+                try {
+                    const res = await fetch(`/content/galeria/${slug}.json`);
+                    if (!res.ok) continue; // Si la categoría aún no se ha publicado en el CMS, la salta
+
+                    const datos = await res.json();
+                    if (!datos.imagenes || datos.imagenes.length === 0) continue;
+
+                    // Inicializar estado del carrusel para esta categoría
+                    carruselesEstado[slug] = 0;
+
+                    // Generar el HTML de las imágenes del carrusel
+                    const imagenesHTML = datos.imagenes.map((item, index) => {
+                        const opacityClass = index === 0 ? 'opacity-100' : 'opacity-0';
+                        return `
+                            <img src="/${item.foto}" alt="${item.titulo_foto || datos.titulo}"
+                                class="slide-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${opacityClass}">
+                        `;
+                    }).join('');
+
+                    // Renderizar la tarjeta completa con el mismo diseño Tailwind CSS
+                    htmlFinal += `
+                        <div class="item-galeria group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100">
+                            <div class="relative aspect-[4/3] overflow-hidden carrusel-container" data-carrusel="${slug}">
+                                ${imagenesHTML}
+
+                                <span class="absolute top-4 left-4 bg-slate-900/90 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm z-10">
+                                    ${datos.titulo}
+                                </span>
+
+                                ${datos.imagenes.length > 1 ? `
+                                    <button onclick="cambiarSlide('${slug}', -1)"
+                                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                                    </button>
+                                    <button onclick="cambiarSlide('${slug}', 1)"
+                                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                                    </button>
+                                ` : ''}
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-bold text-gray-900 text-lg">${datos.titulo}</h4>
+                                ${datos.descripcion ? `<p class="text-sm text-gray-500 mt-1">${datos.descripcion}</p>` : ''}
+                            </div>
+                        </div>
+                    `;
+                } catch (err) {
+                    console.warn(`No se pudo cargar la categoría ${slug}:`, err);
+                }
+            }
+
+            if (htmlFinal !== '') {
+                contenedor.innerHTML = htmlFinal;
+                lucide.createIcons(); // Re-inicializar iconos para las flechas insertadas
+            }
+        }
+
+        // Función para cambiar de foto manualmente
         function cambiarSlide(idCarrusel, direccion) {
             const contenedor = document.querySelector(`[data-carrusel="${idCarrusel}"]`);
             if (!contenedor) return;
@@ -861,11 +729,13 @@
             const imagenes = contenedor.querySelectorAll('.slide-img');
             let total = imagenes.length;
 
+            if (total <= 1) return;
+
             // Ocultar foto actual
             imagenes[carruselesEstado[idCarrusel]].classList.remove('opacity-100');
             imagenes[carruselesEstado[idCarrusel]].classList.add('opacity-0');
 
-            // Calcular nuevo índice cíclico
+            // Calcular nuevo índice
             carruselesEstado[idCarrusel] = (carruselesEstado[idCarrusel] + direccion + total) % total;
 
             // Mostrar nueva foto
@@ -873,36 +743,16 @@
             imagenes[carruselesEstado[idCarrusel]].classList.add('opacity-100');
         }
 
-        // Rotación automática cada 4 segundos
+        // Rotación automática de carruseles cada 4 segundos
         setInterval(() => {
             Object.keys(carruselesEstado).forEach(id => {
                 cambiarSlide(id, 1);
             });
         }, 4000);
 
-        // Función para filtrar categorías
-        function filtrarGaleria(categoria) {
-            const items = document.querySelectorAll('.item-galeria');
-            const botones = document.querySelectorAll('.btn-filtro');
-
-            botones.forEach(btn => {
-                btn.classList.remove('bg-primary', 'text-white');
-                btn.classList.add('bg-white', 'text-gray-700');
-            });
-
-            if (event && event.target) {
-                event.target.classList.remove('bg-white', 'text-gray-700');
-                event.target.classList.add('bg-primary', 'text-white');
-            }
-
-            items.forEach(item => {
-                if (categoria === 'todos' || item.classList.contains(categoria)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
+        // Cargar la galería cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', cargarGaleriaDesdeCMS);
     </script>
+    
 </body>
 </html>
