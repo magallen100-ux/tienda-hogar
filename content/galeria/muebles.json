@@ -1,0 +1,23 @@
+{
+  "orden": 6,
+  "slug": "muebles",
+  "titulo": "Mobiliario de Hogar",
+  "descripcion": "Muebles de salón, comedor y proyectos de amueblamiento.",
+  "imagenes": [
+    {
+      "foto": "img/mueble1.jpg"
+    },
+    {
+      "foto": "img/mueble2.jpg"
+    },
+    {
+      "foto": "img/mueble3.jpg"
+    },
+    {
+      "foto": "img/mueble4.jpg"
+    },
+    {
+      "foto": "img/mueble5.jpg"
+    }
+  ]
+}
