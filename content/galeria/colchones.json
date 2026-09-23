@@ -1,0 +1,20 @@
+{
+  "orden": 5,
+  "slug": "colchones",
+  "titulo": "Sistemas de Descanso",
+  "descripcion": "Equipos de descanso, canapés y tecnología viscoelástica.",
+  "imagenes": [
+    {
+      "foto": "img/colchon1.jpeg"
+    },
+    {
+      "foto": "img/colchon2.jpeg"
+    },
+    {
+      "foto": "img/colchon3.jpeg"
+    },
+    {
+      "foto": "img/colchon4.jpeg"
+    }
+  ]
+}
