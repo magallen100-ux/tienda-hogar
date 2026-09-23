@@ -14,11 +14,11 @@ collections:
     label_singular: "Categoría"
     folder: "content/galeria"
     create: true
-    summary: "{{titulo}}"
-    slug: "{{titulo}}"
+    slug: "{{fields.slug}}"
     format: "json"
     fields:
-      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Verticales Noche y Dia" }
+      - { label: "Identificador Web (Slug)", name: "slug", widget: "string", hint: "Escribe el nombre en minúsculas y con guiones (ej: verticales-noche-dia)" }
+      - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Verticales Noche/Día" }
       - { label: "Descripción Corta", name: "descripcion", widget: "text", required: false }
       - { label: "Orden de aparición", name: "orden", widget: "number", default: 1, value_type: "int" }
       - label: "Fotos de esta categoría"
