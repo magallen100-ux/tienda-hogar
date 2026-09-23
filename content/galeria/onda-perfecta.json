@@ -1,0 +1,20 @@
+{
+  "orden": 4,
+  "slug": "onda-perfecta",
+  "titulo": "Cortinas Onda Perfecta",
+  "descripcion": "Confección simétrica y fluida de acabado impecable.",
+  "imagenes": [
+    {
+      "foto": "img/cortinaondaperfecta1.jpeg"
+    },
+    {
+      "foto": "img/cortinaondaperfecta2.jpeg"
+    },
+    {
+      "foto": "img/cortinaondaperfecta3.jpeg"
+    },
+    {
+      "foto": "img/cortinaondaperfecta4.jpeg"
+    }
+  ]
+}
