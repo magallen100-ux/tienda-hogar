@@ -1,0 +1,23 @@
+{
+  "orden": -14,
+  "slug": "verticales-noche-dia",
+  "titulo": "Verticales Noche/Día",
+  "descripcion": "Combinación de franjas opacas y traslúcidas para graduar la luz.",
+  "imagenes": [
+    {
+      "foto": "img/cortinand1.jpeg"
+    },
+    {
+      "foto": "img/cortinand2.jpeg"
+    },
+    {
+      "foto": "img/cortinand3.jpeg"
+    },
+    {
+      "foto": "img/cortinand4.jpeg"
+    },
+    {
+      "foto": "img/cortinand5.jpeg"
+    }
+  ]
+}
