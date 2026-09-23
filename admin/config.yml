@@ -15,7 +15,7 @@ collections:
     folder: "content/galeria"
     create: true
     identifier_field: "titulo"
-    slug: "{{fields.titulo}}"  # 👈 DEBE SER EXACTAMENTE {{fields.titulo}}
+    slug: "{{slug}}"
     format: "json"
     fields:
       - { label: "Nombre de la Categoría", name: "titulo", widget: "string", hint: "Ej: Verticales Noche y Dia" }
