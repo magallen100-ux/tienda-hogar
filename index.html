@@ -856,6 +856,16 @@
         }, 4000);
 
         document.addEventListener('DOMContentLoaded', cargarGaleriaDesdeCMS);
+        window.addEventListener('load', function () {
+            if (window.location.hash) {
+                const target = document.querySelector(window.location.hash);
+                if (target) {
+                setTimeout(function () {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+                }
+            }
+        });
     </script>
 
     
