@@ -737,12 +737,32 @@
     </footer>
 
 
+
     <script>
         // Inicializar iconos de Lucide
         lucide.createIcons();
 
         // Estado global de índices para los carruseles
         const carruselesEstado = {};
+
+        // Función para posicionar suavemente la pantalla en la sección solicitada
+        function hacerScrollASeccion() {
+            if (!window.location.hash) return;
+            
+            const target = document.querySelector(window.location.hash);
+            const header = document.querySelector('header');
+            
+            if (target) {
+                const headerHeight = header ? header.offsetHeight : 80;
+                const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                const offsetPosition = elementPosition - headerHeight - 16;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
 
         // Cargar dinámicamente TODAS las categorías desde la carpeta de GitHub
         async function cargarGaleriaDesdeCMS() {
@@ -826,6 +846,9 @@
                 }
             } catch (err) {
                 console.error("Error al cargar la galería dinámica:", err);
+            } finally {
+                // Al terminar de pintar las fotos (o si falla), ejecutamos el posicionamiento exacto
+                hacerScrollASeccion();
             }
         }
 
@@ -857,28 +880,10 @@
 
         document.addEventListener('DOMContentLoaded', cargarGaleriaDesdeCMS);
         
-        window.addEventListener('load', function () {
-            if (window.location.hash) {
-                // Damos un tiempo de margen (600ms) para que la galería dinámica termine de cargar sus imágenes
-                setTimeout(function () {
-                    const target = document.querySelector(window.location.hash);
-                    const header = document.querySelector('header');
-                    if (target) {
-                        const headerHeight = header ? header.offsetHeight : 80;
-                        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
-                        const offsetPosition = elementPosition - headerHeight - 16; // Restamos la altura del menú fijo
-
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                }, 600);
-            }
+        // Reintentar posicionar una vez hayan cargado todos los recursos gráficos pesados
+        window.addEventListener('load', function() {
+            setTimeout(hacerScrollASeccion, 300);
         });
-      
-        
-    
     </script>
 
     
