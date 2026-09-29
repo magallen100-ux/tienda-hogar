@@ -856,16 +856,29 @@
         }, 4000);
 
         document.addEventListener('DOMContentLoaded', cargarGaleriaDesdeCMS);
+        
         window.addEventListener('load', function () {
             if (window.location.hash) {
-                const target = document.querySelector(window.location.hash);
-                if (target) {
+                // Damos un tiempo de margen (600ms) para que la galería dinámica termine de cargar sus imágenes
                 setTimeout(function () {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-                }
+                    const target = document.querySelector(window.location.hash);
+                    const header = document.querySelector('header');
+                    if (target) {
+                        const headerHeight = header ? header.offsetHeight : 80;
+                        const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerHeight - 16; // Restamos la altura del menú fijo
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }, 600);
             }
         });
+      
+        
+    
     </script>
 
     
